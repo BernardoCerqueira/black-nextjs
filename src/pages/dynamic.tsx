@@ -7,7 +7,7 @@ interface ApiResponse {
     timestamp: Date
 }
 
-export const getServerSideProps: GetServerSideProps = async () => { //!!
+export const getServerSideProps: GetServerSideProps = async () => {
     const serverSideData: ApiResponse = await fetch(`${process.env.NEXT_PUBLIC_APIURL}/api/hello`).then(res => res.json())
 
     return {
@@ -20,7 +20,7 @@ export const getServerSideProps: GetServerSideProps = async () => { //!!
 const Dynamic: NextPage = (props: {
     children?: ReactNode,
     serverSideData?: ApiResponse
-}) => { //!!
+}) => {
     const [clientSideData, setClientSideData] = useState<ApiResponse>()
 
     useEffect(() => {
