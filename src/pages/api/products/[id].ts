@@ -6,6 +6,4 @@ export default function handler(req: NextApiRequest, res: NextApiResponse){
     const product = products.find(prod => prod.id === Number(id))
     if(!product) res.status(404).json({message: "Product not found."})
     res.status(200).json(product)
-
-    
 }
