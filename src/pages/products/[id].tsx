@@ -6,7 +6,7 @@ import Head from "next/head";
 import { ReactNode } from "react";
 import { Container } from "reactstrap";
 
-export const getStaticProps: GetStaticProps = async (context) => { //!!
+export const getStaticProps: GetStaticProps = async (context) => {
     const id = context.params?.id
 
     if (typeof id === "string") {
@@ -27,7 +27,7 @@ export const getStaticProps: GetStaticProps = async (context) => { //!!
     }
 }
 
-export const getStaticPaths: GetStaticPaths = async () => { //!!
+export const getStaticPaths: GetStaticPaths = async () => {
     const products = await fetchProducts()
 
     const paths = products.map(product => {
