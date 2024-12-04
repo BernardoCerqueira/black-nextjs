@@ -2,6 +2,8 @@
 
 Welcome to **Black**, a fully functional virtual store built with **Next.js**. This project demonstrates how to create an interactive e-commerce application where users can browse products, manage a shopping cart, and save their cart state using local storage.
 
+Check it out: https://black-nextjs-xi-six.vercel.app/
+
 ---
 
 ## Features
@@ -37,6 +39,8 @@ Welcome to **Black**, a fully functional virtual store built with **Next.js**. T
 ---
 
 ## Getting Started
+
+You can try the App by clicking [here](https://black-nextjs-xi-six.vercel.app/) or by following the steps bellow:
 
 ### Prerequisites
 Ensure you have the following installed on your machine:
