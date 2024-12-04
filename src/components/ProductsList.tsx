@@ -12,7 +12,7 @@ export const ProductsList: React.FC<ProductsListProps> = ({products}) => {
         <>
             <Row className="g-5">
                 {products.map(product => (
-                    <Col md={6} lg={4} xl={3} key={product.id}>
+                    <Col md={6} lg={4} xl={3} key={product.id} className="productCardCol">
                         <ProductCard
                             product = {product}
                         />

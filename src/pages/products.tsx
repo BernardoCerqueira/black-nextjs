@@ -31,7 +31,7 @@ const Products: NextPage = (props: {
 
       <main>
         <Container className="mb-5">
-          <h1 className="my-5">Nossos Produtos</h1>
+          <h1 className="my-5 allProductsTitle">Nossos Produtos</h1>
 
           {<ProductsList products={props.products!}/>}
         </Container>

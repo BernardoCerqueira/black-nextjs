@@ -18,23 +18,24 @@ const CartTableRow = (props: {
     <tr>
       <td>
         <Row className="align-items-center">
-          <Col xs={4} md={2} lg={1}>
+          <Col xs={4} md={4} lg={4}>
             <Image
               src={props.entry.product.imageUrl}
               alt={props.entry.product.name}
-              height={30}
-              width={30}
+              height={500}
+              width={600}
+              className="cartProductImage"
             />
           </Col>
-          <Col xs={8} md={10} lg={11}>
-            {props.entry.product.name}
+          <Col xs={8} md={8} lg={8}>
+            <strong>{props.entry.product.name}</strong>
           </Col>
         </Row>
       </td>
       <td>R$ {props.entry.product.price}</td>
       <td>{props.entry.quantity}</td>
       <td>R$ {(props.entry.product.price * props.entry.quantity)}</td>
-      <td>
+      <td className="buttonsTd">
         <Button
           color="primary"
           size="sm"

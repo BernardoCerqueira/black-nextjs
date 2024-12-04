@@ -1,0 +1,44 @@
+.productImage{
+    display: block;
+    margin: auto;
+}
+
+.card{
+    width: 300px;
+    height: auto;
+}
+
+.card-img-top{
+    width: 298px;
+    height: auto;
+}
+
+.cartProductImage{
+    width: 100%;
+    height: auto;
+}
+
+.buttonsTd{
+    min-width: 75px;
+}
+
+@media screen and (max-width: 768px) {
+    .productImage{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    .productCardCol{
+        display: flex;
+        place-content: center;
+    }
+    .card, .card-img-top{
+        width: 100%;
+    }
+    .allProductsTitle{
+       text-align: center;
+    }
+}

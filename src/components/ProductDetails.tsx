@@ -15,16 +15,17 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
 
   return (
     <Row>
-      <Col lg={6}>
+      <Col xl={6}>
         <Image
           src={product.imageUrl}
           alt={product.name}
           height={500}
           width={600}
+          className="productImage"
         />
       </Col>
 
-      <Col lg={6}>
+      <Col xl={6}>
         <h1>{product.name}</h1>
 
         <h2 className="text-muted">R$ {product.price}</h2>
