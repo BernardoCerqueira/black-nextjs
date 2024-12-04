@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Button, Col, Row, Table } from "reactstrap";
 import { useCart } from "../hooks/useCart";
 import { ProductType } from "../services/products";
+import Link from "next/link";
 
 type CartEntry = {
   product: ProductType
@@ -16,22 +17,24 @@ const CartTableRow = (props: {
 
   return (
     <tr>
-      <td>
-        <Row className="align-items-center">
-          <Col xs={4} md={4} lg={4}>
-            <Image
-              src={props.entry.product.imageUrl}
-              alt={props.entry.product.name}
-              height={500}
-              width={600}
-              className="cartProductImage"
-            />
-          </Col>
-          <Col xs={8} md={8} lg={8}>
-            <strong>{props.entry.product.name}</strong>
-          </Col>
-        </Row>
-      </td>
+      <Link href={`/products/${props.entry.product.id}`}>
+        <td>
+          <Row className="align-items-center">
+            <Col xs={4} md={4} lg={4}>
+              <Image
+                src={props.entry.product.imageUrl}
+                alt={props.entry.product.name}
+                height={500}
+                width={600}
+                className="cartProductImage"
+              />
+            </Col>
+            <Col xs={8} md={8} lg={8} className="cartProductText">
+              <strong>{props.entry.product.name}</strong>
+            </Col>
+          </Row>
+        </td>
+      </Link>
       <td>R$ {props.entry.product.price}</td>
       <td>{props.entry.quantity}</td>
       <td>R$ {(props.entry.product.price * props.entry.quantity)}</td>
