@@ -6,6 +6,19 @@ Check it out: https://black-nextjs-xi-six.vercel.app/
 
 ---
 
+## Screenshots
+
+### Home
+![home](https://github.com/user-attachments/assets/65300097-9e23-4ba3-9bc6-f540e9a97151)
+
+### Products
+![products](https://github.com/user-attachments/assets/d32ae317-2fca-4702-b84c-ef78e108ebf3)
+
+### Cart
+![cart](https://github.com/user-attachments/assets/8517b88b-a169-478c-87c4-af7aed033699)
+
+---
+
 ## Features
 
 ### 🛒 **Product Catalog**
@@ -35,42 +48,4 @@ Check it out: https://black-nextjs-xi-six.vercel.app/
 
 ### Storage
 - **Local Storage** - For persisting cart data on the client-side.
-
----
-
-## Getting Started
-
-You can try the App by clicking [here](https://black-nextjs-xi-six.vercel.app/) or by following the steps bellow:
-
-### Prerequisites
-Ensure you have the following installed on your machine:
-- Node.js
-- npm or yarn
-
-### Installation
-
-1. **Clone the Repository**:
-    ```bash
-    git clone https://github.com/yourusername/black-nextjs-store.git
-    cd black-nextjs-store
-    ```
-
-2. **Install Dependencies**:
-    ```bash
-    npm install
-    # or
-    yarn install
-    ```
-
-3. **Run the Development Server**:
-    ```bash
-    npm run dev
-    # or
-    yarn dev
-    ```
-
-4. Open your browser and navigate to:
-    ```
-    http://localhost:3000
-    ```
 
